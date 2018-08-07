@@ -1,0 +1,60 @@
+<html>
+<title> Notes REST API </title>
+<head>
+    <style>
+        body {
+            color: #394a5f;
+            font-family: sans-serif
+        }
+        code {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1> NOTES, REST API </h1>
+<h3> MongoLab MongoDB Mongoose Node.js on Heroku </h3>
+<h3> API URL : https://aqueous-peak-15801.herokuapp.com/ </h3>
+</br>
+    <h3> Create Note </h3>
+        <pre>
+            <code>
+                url: /notes
+                body: {
+                    "title": "test",
+                    "description": "test",
+                    "color": "#FFFFFF"
+                }
+            </code>
+        </pre>
+<h3> Get All Notes </h3>
+<pre>
+            <code>
+                 url: /notes
+            </code>
+        </pre>
+<h3> Get One Note </h3>
+<pre>
+            <code>
+                url: /notes/id  // id= note id
+            </code>
+        </pre>
+    <h3> Update Note </h3>
+        <pre>
+            <code>
+                url: /notes/id  // id= note id
+                body: {
+                    "title": "test 1",
+                    "description": "test 1",
+                    "color": "#FFFFFF"
+                }
+            </code>
+        </pre>
+    <h3> Delete Note </h3>
+        <pre>
+            <code>
+                url: /notes/id  // id= note id
+            </code>
+        </pre>
+</body>
+</html>
